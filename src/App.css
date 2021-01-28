@@ -2,26 +2,10 @@ body {
   margin: 10px;
 }
 
-figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  font-family: sans-serif;
-  background: #34495e;
-  color: #fff;
-  transition: background .4s ease-in-out;
-}
-
-figure.warning {
-  background: #e74c3c;
-}
-
 form {
   display: flex;
   align-items: flex-end;
+  margin-bottom: 30px;
 }
 
 input {
@@ -34,7 +18,7 @@ input {
   text-align: center;
 }
 
-button {
+.submit {
   border-radius: 5px;
   border-color: black;
   background-color: white;
@@ -46,32 +30,27 @@ button {
 .form {
   display: flex;
   flex-direction: column;
-  margin-right: 30px;
+  margin-right: 30px;  
 }
 
-.hex-field {
-  box-sizing: border-box;
-  width: 180px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  font-size: 18px;
-  letter-spacing: 0.1em;
+/* .table-head {
+  margin-bottom: 30px;
+} */
+
+.table-steps {
+  border: solid black 2px;
+  border-radius: 5px;  
 }
 
-.message {
-  text-align: center;
-  box-sizing: border-box;
-  width: 180px;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 10px;
-  margin-top: 5px;
-  background-color: rgba(0, 0, 0, 0.45);
-  color: #fff;
-  content: '';
-  -webkit-user-select: all;  /* Chrome 49+ */
-  -moz-user-select: all;     /* Firefox 43+ */
-  -ms-user-select: all;      /* No support yet */
-  user-select: all;
+th {
+  font-weight: normal;
+  width: 200px;
+  text-align: start;
+}
+
+.item-action {
+  cursor: pointer;
+  background-color: white;
+  border: 0px;
+  margin-right: 10px;
 }
